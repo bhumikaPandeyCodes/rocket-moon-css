@@ -1,0 +1,173 @@
+body{
+    background-color: #0C134F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    overflow: hidden;
+}
+.moon-body{
+    /* centering div using position property */
+    /* position: absolute;
+    border: 5px solid white;
+    margin: auto;
+    top:0;
+    bottom:0;
+    left:0;k
+    right: 0; */
+    width: 200px;
+    height: 200px;
+    background-color: #D4ADFC;
+    border-radius: 50%;
+    position: absolute;
+}
+.face{
+    position: relative;
+    /* background-color: blanchedalmond; */
+    width: 100px;
+    height: 50px;
+    bottom:220px;
+    left: 26%;
+}
+.eyes{
+    display: flex;
+    justify-content: space-around;
+}
+.eye{
+    background-color: black;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.cheek{
+    width: 11px;
+    height: 11px;
+    background-color:#b187db;
+    border-radius: 50%;
+    display: inline-block;
+}
+.cheek-1{
+    margin-right:70px
+}
+.smile{
+    position: relative;
+    width: 12px;
+    height: 6px;
+    border:4px solid black;
+    border-top: none;
+    bottom:10px;
+    left: 40px;
+    border-radius: 0 0 15px 15px
+}
+.moon-shadow{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 15px 15px #00000026;
+    bottom: 130px;
+    right: 14px;
+}
+
+.crater{
+    position: relative;
+    background-color: #b58bdf;
+}
+.crater-1{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top:23px;
+    left: 80px;
+    box-shadow: 5px 0px 0px #a17dc6 inset;
+}
+.crater-2{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top:15px;
+    left: 112px;
+    box-shadow: 7px 0px 0px #a17dc6 inset;
+}
+.crater-3{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    top:15px;
+    left: 15px;
+    box-shadow: 5px 0px 0px #a17dc6 inset;
+}
+.crater-4{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top:80px;
+    left: 40px;
+    box-shadow: 5px 0px 0px #a17dc6 inset;
+}
+.crater-5{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    top:60px;
+    left: 120px;
+    box-shadow: 7px 0px 0px #a17dc6 inset;
+}
+.orbit{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    z-index: -1;
+    /* border: 5px solid rgb(255, 255, 255); */
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.rocket-body{
+    width:40px;
+    height: 60px;
+    background-color: white;
+    position: relative;
+    left:-20px;
+    top:120px;
+    border-radius: 50% 50% 5% 5%;
+}
+.rocket-body:before{
+    position: absolute;
+    z-index:-1 ;
+    content: "";
+    width: 80px;
+    height: 30px;
+    background-color: #a17dc6;
+    top:30px;
+    left: -20px;
+    border-radius: 50% 50% 0 0;
+}
+.rocket-body:after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 25px;
+    height: 20px;
+    background-color: #a17dc6;
+    top:50px;
+    border-radius: 0 0 20% 20%;
+    left:8px
+}
+.window{
+    height:15px;
+    width:15px;
+    background-color: #1D267D;
+    border-radius: 50%;
+    position: absolute;
+    top:15px;
+    left: 8.5px;
+    border: 4px solid grey;
+}
